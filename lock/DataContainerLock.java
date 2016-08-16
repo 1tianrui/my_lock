@@ -16,13 +16,9 @@ public class DataContainerLock<T> {
 
     public T read(){
         lock.readLock().lock();
-        //this do a deep copy
-        final T t = copy(this.t);
+        final T t = this.t;
         lock.readLock().unlock();
         return t;
     }
 
-    private T copy(T t){
-        return t ;
-    }
 }

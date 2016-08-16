@@ -8,7 +8,7 @@ public class LockTr implements Lock{
         import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by jnkmhbl on 16/8/16.
+ * use cas to impelement lock --- lock free
  */
 public class LockTr<T> {
     private volatile  T t;

@@ -10,7 +10,7 @@ public class LockTr implements Lock{
 /**
  * use cas to ensure data safe
  */
-public class LockTr<T> {
+public class DataContainerCas<T> {
     private volatile  T t;
     private AtomicInteger  complete = new AtomicInteger(1) ;
 
